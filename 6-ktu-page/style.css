@@ -1,148 +1,81 @@
-* {
-margin:0;
-padding:0;
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-body{background-color:#F7F7F7;
-  color:#6D6D6D;
-}
 
-.active{
-background-color:#20BAE5;
-color:white}
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
+<title>ktu-website</title>
+</head>
+<body>
 
-.form{
-  height:40vh;
-  padding:40px 0px 0px 60px;
-  margin-top:4px;
-  border: 1px solid #6FACF5;
-  border-radius: 4px;
-}
+<ul class="navbar">
+  <li><a href="home.html" class="">Contact Us</a></li>
+  <li><a href="home.html" class="">FAQ</a></li>
+  <li><a href="home.html" class="">Research</a></li>
+  <li><a href="home.html" class="">Registration</a></li>	
+  <li><a href="home.html" class="active">Home</a></li>
+  <div class="logo">
+  <li><a href="home.html">e-Gov Platform for APJ Abdul Kalam Technological University</a></li>
+  <li><img src="ktu-logo.png"></li>
+  </div>
+</ul>
+<div class="sign">
+<h3 >Sign In </h3><br>
+<form class="form">
+<label >Username</label><br>
+<input  type="text"   name="username" value="" placeholder="Enter username"><br> <br>                                      
+<label>Password</label><br>
+<input  type="password"  placeholder="Enter password"/><br><br>
+<input  type="submit" value="Login"/ style="color:white;background-color:#47A447; border:transparent;border-radius:2px"><br>
+<a href="" style="text-decoration:none;float:right;margin:75px 10px 0px 0px;"><label class >Forgot password ?</label></a>
+</form>
+
+</div>
+<div class="body">
+<div class=portal1>
+<div class="portal">
+ <h>APJ Abdul Kalam Technological University e-Governance Portal</h>
+</div>
+<div class="portal2">
+ <h> Institutions </h><br><br>
+ <p>Institutions that are affiliated/applying for affiliation with APJ Abdul Kalam Technological University can click here to login to the e-Gov application. Institution users can perform activities related to affiliation, student registration and academics, make fee payments etc. Colleges can view the student records that includes personal information, admission information, attendance details, internal evaluation details, mark lists, student history and other details after logging on. For the programs offered by the university, colleges can view the curriculum and choose the courses for each branch/stream running there. </p>
+
+</div>
 
 
-ul {
-height:39px;
-font-size: 13px;
-border-bottom:3px solid #3671B9;
-list-style-type:none;
-background-color:#D0E1F4;
-overflow:hidden;
-}
+<div class="portal2">
 
-li{
-float:right;
+ <h style="color:#5CB85C;"> Students </h><br><br>
+ <p>Students who are admitted in colleges affiliated to APJ Abdul Kalam Technological University can click here to login to the e-Gov application. Registered students can use the student portal to gain access to personalized information and also view their academic details, attendance and marks, earned credits etc. They can download their mark list, grade sheet etc and access educational information. The portal also allows students to securely communicate with the university. </p>
+
+</div>
 
 
-}
+<div class="portal2">
+<p1>
+ <h style="color:#FFCC00"> University </h><br><br>
+ <p>University staff such as management team, auditors, external
+trainers and other officials can login to the e-Gov application to
+perform various activities. Master data such as programs, schemes,
+branches/streams, courses, academic calendar etc can be set up by the
+administrators. Clusters can be set up, cluster members configured
+and curriculum managed for each cluster. University academic experts
+can prepare the Curriculum, Course Plan and Evaluation Plan for the
+various programs offered and set the rules for course selection by
+colleges. The management team can also issue orders, view payment
+information and respond to communication with colleges.
 
-li a{
-color:black; 
-display:block;
-text-align:center;
-padding: 14px 16px;
-text-decoration:none;
-}
 
-.sign{
-float:right;
-margin-right:15px;
-width:24vw;
-font-family: "Helvetica Neue",Helvetica,Arial,;
-font-size:18px;
-border-radius: 4px;
-height:50px;
-color:#FFFFFF;
-margin-top:50px;
+lorem365
+ </p>
+<p2>
+</div>
+</div>
+</div>
 
-background-color:#428BCA;}
-h2 {
-  color:#3671B9;
-  font-size:12px
-}
-label{
-  color:#3671B9;
-  font-size: 13px;
-}
-input{
-  width: 75%;
-  margin-top: 10px;
-  padding: 6px 20px;
-  border:1px solid gray;
-  border-radius: 3px;
-}
-.logo{
-height:39px;
-padding:0 15px;
-overflow:hidden;
-text-align:center;
-float:left;
-font-size: 20px;
-
-}
-
-.logo a{
-padding:10px 0 0 0;
-text-align:center;
-color:#3671B9;
-}
-.logo img{
-  margin:0;
-  padding:0;
-  margin-left: auto;
-  margin-right: auto;
+<footer>
   
-  height:40;
-object-fit: contain;
-}
+  <center>Copyright ©APJ Abdul Kalam Technological University 2014.</center>
+</footer>
 
-li a:hover{
+</body>
 
-   color:#C0C4C9;
-}
-
-
-.portal1{margin-left:15px;
-}
-
-.portal1{width:70vw;
-}
-.portal{
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-font-size:25px;
- border-radius: 4px;
-height:50px;
-color:#FFFFFF;
-margin-top:50px;
-
-background-color:#428BCA;
-}
-
-.portal h{
-margin-left:15px;
-}
-.portal2{
-  
-  height:20vh;
-  padding:20px;
-font-size:15px;
-border: 0.5px gray;
-border-style:solid;
-border-radius:4px;
-}
-
-
-.portal2 h{
-color:#3ab0e2;
-font-size:25px;
-}
-
-footer{
-  margin-top: 50px;
-  height:30px;
-  color:white;
-  background-color: #0477A4;
-  font-size: 14px;
-  padding: 5px 0px 5px 0px;
-}
-
-
+</html>
