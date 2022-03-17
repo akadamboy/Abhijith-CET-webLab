@@ -1,3 +1,4 @@
+use new_company;
 INSERT INTO regions(region_id,region_name) VALUES (1,'Europe');
 INSERT INTO regions(region_id,region_name) VALUES (2,'Americas');
 INSERT INTO regions(region_id,region_name) VALUES (3,'Asia');
@@ -150,3 +151,17 @@ INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_i
 INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_id) VALUES (29,'Alec','Partners','Child',146);
 INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_id) VALUES (30,'Sandra','Taylor','Child',176);
 
+select * from countries;
+select email,phone_number from employees;
+select * from employees where last_name="Fay";
+select last_name,hire_date from employees where last_name="Grant" or last_name="Whalen";
+select first_name,last_name from employees where job_id=(select job_id from jobs where job_title="Shipping Clerk");
+select first_name,last_name from employees where department_id=(select department_id from departments where department_id=8);
+select * from departments order by department_id desc;
+select last_name from employees where last_name like 'K%';
+select first_name,last_name,hire_date from employees where year(hire_date) between '1995-01-01' and '1997-12-31';
+select job_title from jobs where max_salary<5000;
+select lower(email)from employees;
+select first_name,last_name,hire_date from employees where year(hire_date) like '1995%';
+insert into employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) values(207,'Paul','Newton','paul.newton@sqltutorial.org','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name = "Shipping";
