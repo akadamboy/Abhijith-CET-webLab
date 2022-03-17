@@ -59,7 +59,6 @@ INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (17,'Shipping Cl
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (18,'Stock Clerk',2000.00,5000.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (19,'Stock Manager',5500.00,8500.00);
 
-alter table dept rename to departments;
 INSERT INTO departments(department_id,department_name,location_id) VALUES (1,'Administration',1700);
 INSERT INTO departments(department_id,department_name,location_id) VALUES (2,'Marketing',1800);
 INSERT INTO departments(department_id,department_name,location_id) VALUES (3,'Purchasing',1700);
@@ -72,12 +71,6 @@ INSERT INTO departments(department_id,department_name,location_id) VALUES (9,'Ex
 INSERT INTO departments(department_id,department_name,location_id) VALUES (10,'Finance',1700);
 INSERT INTO departments(department_id,department_name,location_id) VALUES (11,'Accounting',1700);
 
-alter table employees modify column salary int(10);
-alter table employees drop column commission;
-
-desc employees;
-
-alter table employees modify column phone_number varchar(20);
 
 INSERT INTO employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES(100,'Steven','King','steven.king@sqltutorial.org','515.123.4567','1987-06-17',4,24000.00,NULL,9);
 INSERT INTO employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES(101,'Neena','Kochhar','neena.kochhar@sqltutorial.org','515.123.4568','1989-09-21',5,17000.00,100,9);
